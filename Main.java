@@ -1,21 +1,18 @@
 package com.driver;
 
-package com.driver;
 
-public class Main {
-
-    public static class A {
+    class A {
         public String meth() {
             return "Hello World";
         }
     }
-
-    public static class B extends A {
+    class B extends A {
         @Override
         public String meth() {
             return "Method is Overridden";
         }
     }
+    public class Main {
 
     public static void main(String[] args) {
         A obj = new A();
