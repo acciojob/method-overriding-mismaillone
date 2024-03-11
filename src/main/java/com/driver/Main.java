@@ -16,10 +16,10 @@ class B extends A {
 public class Main {
 
     public static void main(String[] args) {
-        A obj = new A();
+       //  A obj = new A();
         B objB = new B();
 
-        String res = obj.meth("Invoking method from class A");
+        // String res = obj.meth("Invoking method from class A");
 
         System.out.println(objB.meth("Method is overridden in Extendend class B"));
     }
