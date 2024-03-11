@@ -15,13 +15,8 @@ package com.driver;
     public class Main {
 
     public static void main(String[] args) {
-        A obj = new A();
-        B obj1 = new B();
+         B objB = new B();
 
-        String s = obj.meth("Hello");
-        System.out.println(s);
-
-        String c = obj1.meth("World");
-        System.out.println(c);
-    }
+        
+        System.out.println(objB.meth("hello"));
 }
