@@ -2,14 +2,14 @@ package com.driver;
 
 
     class A {
-        public String meth() {
-            return "Hello World";
+        public String meth(String str) {
+            return str;
         }
     }
     class B extends A {
         @Override
-        public String meth() {
-            return "Method is Overridden";
+        public String meth(String name) {
+            return name;
         }
     }
     public class Main {
@@ -18,10 +18,10 @@ package com.driver;
         A obj = new A();
         B obj1 = new B();
 
-        String s = obj.meth();
+        String s = obj.meth("Hello");
         System.out.println(s);
 
-        String c = obj1.meth();
+        String c = obj1.meth("World");
         System.out.println(c);
     }
 }
