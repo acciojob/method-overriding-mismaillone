@@ -6,7 +6,7 @@ package com.driver;
             return str;
         }
     }
-    class B extends A {
+    class B extends A { 
         @Override
         public String meth(String name) {
             return name;
